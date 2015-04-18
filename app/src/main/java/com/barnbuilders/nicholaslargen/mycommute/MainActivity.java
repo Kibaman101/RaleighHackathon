@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 
 
@@ -40,7 +41,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void dashboardButton()
+    public void dashboardButton(View view)
     {
         //when this button is clicked, start the DashboardActivity
         Intent intent = new Intent(this, DashboardActivity.class);
