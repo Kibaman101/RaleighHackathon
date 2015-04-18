@@ -3,6 +3,7 @@ package com.barnbuilders.nicholaslargen.mycommute;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -43,8 +44,9 @@ public class MainActivity extends ActionBarActivity {
     {
         //when this button is clicked, start the DashboardActivity
         Intent intent = new Intent(this, DashboardActivity.class);
-        startActivity(intent);
+        Log.i("MainActivity", "Starting Dashboard");
 
+        startActivity(intent);
     }
 
     public void startButton()
