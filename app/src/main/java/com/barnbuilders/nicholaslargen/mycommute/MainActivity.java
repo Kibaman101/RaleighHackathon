@@ -3,6 +3,7 @@ package com.barnbuilders.nicholaslargen.mycommute;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
@@ -43,8 +44,21 @@ public class MainActivity extends ActionBarActivity {
     {
         //when this button is clicked, start the DashboardActivity
         Intent intent = new Intent(this, DashboardActivity.class);
+<<<<<<< HEAD
         startActivity(intent);
+=======
+        Log.i("MainActivity", "Starting Dashboard");
+>>>>>>> bbdae212b1dc8f5ccac4494f388c5fc4b7e5bbd4
 
+        startActivity(intent);
+    }
+
+    public void startButton()
+    {
+      //start a thread to deal with the recording, then display the dashboard
+        //RecordingDrive rd = new RecordingDrive(); //might be threaded later and need more
+        Intent intent = new Intent(this, DashboardActivity.class);
+        startActivity(intent);
     }
 
     public void startButton()
