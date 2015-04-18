@@ -25,7 +25,9 @@
         android:background="@drawable/dash"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/StartButton"
-        android:layout_alignStart="@+id/StartButton" />
+        android:layout_alignStart="@+id/StartButton"
+        android:onClick="dashboardButton"
+        />
 
     <ImageView
         android:layout_width="wrap_content"

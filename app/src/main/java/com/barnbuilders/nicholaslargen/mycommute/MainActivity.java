@@ -43,6 +43,15 @@ public class MainActivity extends ActionBarActivity {
     {
         //when this button is clicked, start the DashboardActivity
         Intent intent = new Intent(this, DashboardActivity.class);
+        startActivity(intent);
 
+    }
+
+    public void startButton()
+    {
+      //start a thread to deal with the recording, then display the dashboard
+        //RecordingDrive rd = new RecordingDrive(); //might be threaded later and need more
+        Intent intent = new Intent(this, DashboardActivity.class);
+        startActivity(intent);
     }
 }
