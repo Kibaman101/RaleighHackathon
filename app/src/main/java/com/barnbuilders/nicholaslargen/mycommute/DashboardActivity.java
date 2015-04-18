@@ -1,10 +1,12 @@
 package com.barnbuilders.nicholaslargen.mycommute;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class DashboardActivity extends ActionBarActivity {
@@ -24,6 +26,7 @@ public class DashboardActivity extends ActionBarActivity {
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -37,5 +40,33 @@ public class DashboardActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void avgDay(View view)
+    {
+        //when this button is clicked, start the DashboardActivity
+        Intent intent = new Intent(this, AvgDay.class);
+
+        startActivity(intent);
+    }
+    public void avgWeek(View view)
+    {
+        //when this button is clicked, start the DashboardActivity
+        Intent intent = new Intent(this, AvgWeek.class);
+
+        startActivity(intent);
+    }
+    public void avgMonth(View view)
+    {
+        //when this button is clicked, start the DashboardActivity
+        Intent intent = new Intent(this, AvgMonth.class);
+
+        startActivity(intent);
+    }
+    public void avgYear(View view)
+    {
+        //when this button is clicked, start the DashboardActivity
+        Intent intent = new Intent(this, AvgYear.class);
+
+        startActivity(intent);
     }
 }
