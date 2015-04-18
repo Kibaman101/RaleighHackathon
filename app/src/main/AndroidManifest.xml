@@ -20,10 +20,6 @@
             android:name=".DashboardActivity"
             android:label="@string/title_activity_dashboard" >
         </activity>
-        <activity
-            android:name=".CurrentDrive"
-            android:label="@string/title_activity_current_drive" >
-        </activity>
     </application>
 
 </manifest>
