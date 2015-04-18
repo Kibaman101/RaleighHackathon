@@ -43,6 +43,7 @@ public class MainActivity extends ActionBarActivity {
     {
         //when this button is clicked, start the DashboardActivity
         Intent intent = new Intent(this, DashboardActivity.class);
+        intent.
 
     }
 }
