@@ -125,4 +125,13 @@
         android:layout_alignRight="@+id/TodayLabel"
         android:layout_alignEnd="@+id/TodayLabel" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Date Goes here"
+        android:id="@+id/date"
+        android:layout_below="@+id/TodayLabel"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
