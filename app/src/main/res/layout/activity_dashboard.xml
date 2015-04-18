@@ -26,7 +26,8 @@
         android:layout_alignTop="@+id/avgweekbutton"
         android:layout_toLeftOf="@+id/TodayLabel"
         android:layout_toStartOf="@+id/TodayLabel"
-        android:clickable="true" />
+        android:clickable="true"
+        android:onClick="avgDay"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -36,7 +37,9 @@
         android:id="@+id/avgweekbutton"
         android:layout_alignTop="@+id/AVGMONTH"
         android:layout_toRightOf="@+id/avgdaybutton"
-        android:clickable="true" />
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="avgWeek"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -48,7 +51,8 @@
         android:layout_toRightOf="@+id/avgweekbutton"
         android:layout_toLeftOf="@+id/avgyearly"
         android:layout_toStartOf="@+id/avgyearly"
-        android:clickable="true" />
+        android:clickable="true"
+        android:onClick="avgMonth"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -58,7 +62,9 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:clickable="true" />
+        android:clickable="true"
+        android:layout_alignTop="@+id/AVGMONTH"
+        android:onClick="avgYear"/>
 
     <TextView
         android:layout_width="wrap_content"
